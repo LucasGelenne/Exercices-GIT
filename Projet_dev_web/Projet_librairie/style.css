@@ -1,0 +1,167 @@
+/* style.css - Styles pour Livres & Code */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f4f0;
+    color: #333;
+}
+
+.menu {
+    background-color: #4a7043;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.menu-liens {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu-liens a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-burger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    background-color: #6b8e5f;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+/* Grille livres */
+.grille-livres {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.carte-livre {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.carte-livre h3 {
+    margin-bottom: 0.5rem;
+}
+
+.categorie {
+    color: #6b8e5f;
+    font-style: italic;
+}
+
+.prix {
+    font-weight: bold;
+    color: #d35400;
+    margin: 1rem 0;
+}
+
+button {
+    background-color: #4a7043;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3a5a35;
+}
+
+/* Filtres */
+.filtres {
+    padding: 2rem;
+    text-align: center;
+    background: #eee;
+}
+
+.filtres input, .filtres select {
+    padding: 0.8rem;
+    margin: 0 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Formulaire */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.confirmation {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Menu burger responsive (histoire qu'il soit adapté à la taille de la fenêtre) */
+@media (max-width: 768px) {
+    .menu-liens {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #4a7043;
+        padding: 1rem 0;
+    }
+    
+    .menu-liens.active {
+        display: flex;
+    }
+    
+    .menu-burger {
+        display: block;
+    }
+}
