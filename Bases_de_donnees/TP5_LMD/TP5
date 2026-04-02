@@ -1,0 +1,42 @@
+Question 2 :
+INSERT INTO departement (departement_code, departement_nom, departement_nom_soundex) VALUES
+                        ('666','Les enfers','49.3');
+Question 3 :
+UPDATE departement
+SET departement_nom = 'Elysée'
+WHERE departement_id = 102;
+
+Question 4 :
+SELECT 'Elysée' FROM `departement`;
+
+Question 5 :
+DELETE FROM `departement` WHERE `departement_code` = 666;
+
+Question 6 :
+SELECT * FROM departement;
+
+Question 7 :
+SELECT * FROM departement WHERE `departement_nom` LIKE 'A%';
+
+Question 8 :
+SELECT * FROM departement LIMIT 96, 5;
+SELECT * FROM departement WHERE deparement_code IN (971,972,973,974,976);
+SELECT * FROM departement WHERE departement_id BETWEEN 97 and 101;
+
+Question 9 :
+SELECT * FROM departement LIMIT 86, 15;
+
+Question 10 :
+SELECT * FROM departement ORDER BY departement_nom, departement_nom_soundex DESC;
+
+Question 11 :
+SELECT * FROM departement ORDER BY `departement`.``departement_nom_soundex` DESC LIMIT 5;
+
+Question 12:
+SELECT departement_nom AS nom_departement, departement_code AS code_departement FROM departement;
+
+Question 13:
+SELECT * FROM departement WHERE departement_nom LIKE '%-%';
+
+Question 14:
+SELECT * FROM departement WHERE departement_nom LIKE "%e" OR departement_nom LIKE "%a" OR departement_nom LIKE "%i" OR departement_nom LIKE "%o" OR departement_nom LIKE "%u" OR departement_nom LIKE "%y";
