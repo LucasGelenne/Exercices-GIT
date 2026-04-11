@@ -1,4 +1,4 @@
-« ls » : liste ce qu’il y a dans le dossier.
+« ls » : liste ce qu’il y a dans le dossier. (peut se cumuler avec -l, -r, -t, -h, etc...)
 « cd nom » : va dans le dossier « nom », tape juste « cd » pour rentrer chez toi.
 « pwd » : dit où t’es, chemin complet.
 « cat fichier » : affiche le contenu d’un fichier.
@@ -10,3 +10,14 @@
 « sudo » : devant une commande, pour faire admin.
 « man commande » : manuel rapide.
 « nano nom_du_fichier » : modifier un ficher
+« type [commande]» : indique si la commande est externe ou interne au shell (en l'occurence bash car c'est celui que j'utilise pour apprendre)
+
+
+
+<$ sudo apt-get update [nom du logiciel]> : pour trouver la dernière version d'un logiciel
+<$ sudo apt-get upgrade [nom du logiciel]> : pour mettre à jour un logiciel
+<$ sudo apt-cache search [mot-clé]> : pour trouver le nom d'un logiciel dans la bibliothèque des logiciels disponibles, en faisant une recherche par un mot clé ou une partie du nom du logiciel
+<$ sudo apt-get install [nom du logiciel]> : pour installer le logiciel
+<$ ping [URL]> : pour vérifier si un équipement est joignable sur le réseau
+
+Dans le document .bashrc, j'ai ajouté un alias pour créer un raccourci (par exemple 'alias ll='ls -lrtha;' pour gagner du temps)
