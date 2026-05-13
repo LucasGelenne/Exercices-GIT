@@ -1,4 +1,4 @@
-print("Bienvenue dans votre journal de dépenses quotidiennes!\n")
+print("Bienvenue dans votre journal de dépenses !\n")
 print("Menu:\n1. Ajouter une nouvelle dépense\n2. Voir toutes les dépenses\n3. Calculer le total et la moyenne des dépenses\n4. Effacer toutes les dépenses\n5. Quitter")
 depenses = []
 while True:
@@ -7,7 +7,7 @@ while True:
         print("Sortir du journal. Au revoir!")
         break
     elif Choix == "1":
-        print("Entrez le montant de la dépense (en kcal):")
+        print("Entrez le montant de la dépense:")
         depenses.append(float(input()))
         print("Dépense ajoutée avec succès!")
     elif Choix == "2":
