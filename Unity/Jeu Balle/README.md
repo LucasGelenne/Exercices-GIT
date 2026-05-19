@@ -1,7 +1,11 @@
 
 # README — Scripts Unity (Jeu Balle)
 
-Ces scripts servent pour mon premier jeu Unity (projet "Jeu Balle"). Ci‑dessous j'explique, en tant qu'étudiant, ce que fait chaque script et comment il s'intègre dans la scène.
+Voici le readme de mon premier jeu créé sur Unity à l'aide des cours en ligne disponibles directement sur le site officiel de unity. Il faut noter que de tout le dossier, j'ai codé moi-même de zéro tous les scripts du jeu en C#.
+
+Mon jeu est disponible en cliquant sur [ce lien](https://play.unity.com/en/games/5d2d54cd-afe1-449c-a175-f56fa145cbaf/projetjeu2).
+
+Voici une explication condensée de ce que font mes scripts :
 
 - `DeplacementsJoueur.cs` — Gère les mouvements du joueur et la logique de collecte / victoire / défaite.
   - Utilise un `Rigidbody` pour appliquer une force en `FixedUpdate` en fonction de l'entrée (système `InputSystem` via `OnMove`).

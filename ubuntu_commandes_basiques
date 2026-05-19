@@ -1,7 +1,8 @@
 « ls » : liste ce qu’il y a dans le dossier. (peut se cumuler avec -l, -r, -t, -h, etc...)
 « cd nom » : va dans le dossier « nom », tape juste « cd » pour rentrer chez toi.
 « pwd » : dit où t’es, chemin complet.
-« cat fichier » : affiche le contenu d’un fichier.
+« cat fichier » : affiche le contenu d’un fichier. (peut être utilisé avec -n pour numéroter les lignes).
+« less fichier » : super utilse pour afficher sous forme de pages la documentation de son fichier. Tout un tas de raccourcis permettent de retrouver ce que l'on cherche facilement et rapidement. (more fait pareil, mais en moins bien car il est plus ancien)
 « mkdir dossier » : crée un nouveau dossier.
 « touch fichier » : crée un fichier vide.
 « rm » : supprime, « rm -r » pour les dossiers.
@@ -11,7 +12,6 @@
 « man commande » : manuel rapide.
 « nano nom_du_fichier » : modifier un ficher
 « type [commande]» : indique si la commande est externe ou interne au shell (en l'occurence bash car c'est celui que j'utilise pour apprendre)
-
 
 
 <$ sudo apt-get update [nom du logiciel]> : pour trouver la dernière version d'un logiciel
