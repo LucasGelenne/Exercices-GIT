@@ -5,7 +5,7 @@ Bonjour, bienvenue sur mon repository github.
 Ici vous retrouverez mon projet de formation avec tous les dossiers contenant mon code et plus encore !
 
 On peut citer :
-- Du pyhton (contenant tout mon code avec plein d'exercices et un petit projet à la fin)
+- Du python (contenant tout mon code avec plein d'exercices et un petit projet à la fin)
 
 
 - Du C (globalement des exercices et TP)
